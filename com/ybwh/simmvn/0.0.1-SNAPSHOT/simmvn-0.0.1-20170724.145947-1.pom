@@ -4,7 +4,7 @@
 
 	<groupId>com.ybwh</groupId>
 	<artifactId>simmvn</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>SimMvn</name>
@@ -16,7 +16,6 @@
 		<project.version>0.0.1-SNAPSHOT</project.version>
 
 		<github.global.server>github</github.global.server>
-		
 	</properties>
 
 	<dependencies>
@@ -52,7 +51,7 @@
 			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
-				<version>0.12</version><!-- 这里版本一定要高 -->
+				<version>0.12</version>
 				<configuration>
 					<message>Maven artifacts for ${project.version}</message> <!-- git commit message -->
 					<noJekyll>true</noJekyll> <!-- disable webpage processing -->
@@ -63,9 +62,10 @@
 					</includes>
 					<repositoryName>mvn-repo</repositoryName> <!-- github repo name -->
 					<repositoryOwner>youbeiwuhuan</repositoryOwner> <!-- github username -->
-					
 				</configuration>
 				<executions>
+					<!-- run site-maven-plugin&#039;s &#039;site&#039; target as part of 
+						the build&#039;s normal truetruetrue&#039;deploy&#039; phase -->
 					<execution>
 						<goals>
 							<goal>site</goal>
@@ -83,7 +83,7 @@
 	<repositories>
 		<repository>
 			<id>github-snapshots</id>
-			<url>https://raw.githubusercontent.com/youbeiwuhuan/mvn-repo/master</url>
+			<url>https://raw.githubusercontent.com/youbeiwuhuan/mvn-repo/mvn-repo</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -93,7 +93,8 @@
 				<checksumPolicy>warn</checksumPolicy>
 			</snapshots>
 		</repository>
-	</repositories> -->
+	</repositories>
+	-->
 
 	
 

@@ -4,8 +4,8 @@
   <artifactId>simmvn</artifactId>
   <versioning>
     <versions>
-      <version>0.0.2-SNAPSHOT</version>
+      <version>0.0.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20170724144445</lastUpdated>
+    <lastUpdated>20170724145947</lastUpdated>
   </versioning>
 </metadata>
